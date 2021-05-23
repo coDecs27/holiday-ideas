@@ -1,1 +1,8 @@
 <h1>Homepage</h1>
+<h2>Zeige alle Urlaubsziele</h2>
+<% @holidays.each do |holiday| %>
+  <h5><%= holiday.name %> <%= "*" * holiday.rating %></h5>
+  <p><%= holiday.country %></p>
+  <p><%= holiday.city %></p>
+  <p><%= holiday.description %></p>
+<% end %>
