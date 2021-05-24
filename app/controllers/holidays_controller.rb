@@ -21,4 +21,10 @@ class HolidaysController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def holiday_params
+    params.require(:holiday).permit(:name, :country, :city, :description, :rating, :photo)
+  end
 end
