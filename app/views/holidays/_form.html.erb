@@ -3,5 +3,5 @@
   <%= f.input :country, label: "Land" %>
   <%= f.input :description , label: "Beschreibung" %>
   <%= f.input :rating, label: "Bewertung (0 = nicht empfehlenswert; 5 = sehr gut)", collection: 0..5 %>
-  <%= f.button :submit %>
+  <%= f.button :submit, "Absenden", class: "submit-button" %>
 <% end %>
