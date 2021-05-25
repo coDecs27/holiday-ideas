@@ -2,6 +2,7 @@
 <br>
 <h5><%= @holiday.city %>, <%= @holiday.country %> <%= "*" * @holiday.rating %></h5>
 <p><%= @holiday.description %></p>
+<%= cl_image_tag @holiday.photo.key, height: 300, width: 400, crop: :fill %>
 <br>
 <%= link_to "Startseite", holidays_path %>
 <br>
