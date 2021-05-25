@@ -1,1 +1,6 @@
 <h1>Zeige einen Urlaub</h1>
+<br>
+<h5><%= @holiday.city %>, <%= @holiday.country %> <%= "*" * @holiday.rating %></h5>
+<p><%= @holiday.description %></p>
+<br>
+<%= link_to "Startseite", holidays_path %>
