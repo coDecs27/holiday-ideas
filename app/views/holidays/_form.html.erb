@@ -2,6 +2,6 @@
   <%= f.input :city, label: "Stadt" %>
   <%= f.input :country, label: "Land" %>
   <%= f.input :description , label: "Beschreibung" %>
-  <%= f.input :rating, label: "Bewertung" %>
+  <%= f.input :rating, label: "Bewertung (0 = nicht empfehlenswert; 5 = sehr gut)", collection: 0..5 %>
   <%= f.button :submit %>
 <% end %>
