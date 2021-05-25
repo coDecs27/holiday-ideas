@@ -1,10 +1,7 @@
-<%= form_with do |form| %>
-  <%= form.label :city %>
-  <%= form.text_field :city %>
-  <%= form.label :country %>
-  <%= form.text_field :country %>
-  <%= form.label :description %>
-  <%= form.text_field :description %>
-  <%= form.label :rating %>
-  <%= form.number_field :rating %>
+<%= simple_form_for(holiday) do |f| %>
+  <%= f.input :city %>
+  <%= f.input :country %>
+  <%= f.input :description %>
+  <%= f.input :rating %>
+  <%= f.button :submit %>
 <% end %>

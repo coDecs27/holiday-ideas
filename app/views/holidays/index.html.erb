@@ -1,5 +1,9 @@
 <h1>Alle Urlaubsziele</h1>
 <br>
+
+<%= link_to "Create a new holiday", new_holiday_path %>
+<br><br>
+
 <% @holidays.each do |holiday| %>
   <h5><%= link_to holiday.city, holiday %>, <%= holiday.country %> <%= "*" * holiday.rating %></h5>
   <p><%= holiday.description %></p>
