@@ -38,6 +38,6 @@ class HolidaysController < ApplicationController
   end
 
   def holiday_params
-    params.require(:holiday).permit(:name, :country, :city, :description, :rating, :photo)
+    params.require(:holiday).permit(:country, :city, :description, :rating, :photo)
   end
 end
