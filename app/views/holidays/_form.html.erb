@@ -1,7 +1,7 @@
 <%= simple_form_for(holiday) do |f| %>
-  <%= f.input :city %>
-  <%= f.input :country %>
-  <%= f.input :description %>
-  <%= f.input :rating %>
+  <%= f.input :city, label: "Stadt" %>
+  <%= f.input :country, label: "Land" %>
+  <%= f.input :description , label: "Beschreibung" %>
+  <%= f.input :rating, label: "Bewertung" %>
   <%= f.button :submit %>
 <% end %>

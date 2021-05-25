@@ -4,3 +4,10 @@
 <p><%= @holiday.description %></p>
 <br>
 <%= link_to "Startseite", holidays_path %>
+<br>
+<%= link_to "Bearbeiten", edit_holiday_path %>
+<br>
+<%= link_to "Löschen",
+  holiday_path(@holiday),
+  method: :delete,
+  data: { confirm: "Bist du sicher?" } %>
