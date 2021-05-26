@@ -1,12 +1,14 @@
-<h1>Alle Urlaubsziele</h1>
-<br>
+<div class="container">
+  <h1>Alle Urlaubsziele</h1>
+  <br>
 
-<%= link_to "Füge neuen Urlaubsort hinzu.", new_holiday_path %>
-<br><br>
-
-<% @holidays.each do |holiday| %>
-  <h5><%= link_to holiday.city, holiday %>, <%= holiday.country %> <%= "*" * holiday.rating %></h5>
-  <p><%= holiday.description %></p>
-  <%= cl_image_tag holiday.photo.key, height: 300, width: 400, crop: :fill %>
+  <%= link_to "Füge neuen Urlaubsort hinzu.", new_holiday_path %>
   <br><br>
-<% end %>
+
+  <% @holidays.each do |holiday| %>
+    <h5><%= link_to holiday.city, holiday %>, <%= holiday.country %> <%= "*" * holiday.rating %></h5>
+    <p><%= holiday.description %></p>
+    <%= cl_image_tag holiday.photo.key, height: 300, width: 400, crop: :fill %>
+    <br><br>
+  <% end %>
+</div>
