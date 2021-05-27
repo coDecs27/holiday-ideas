@@ -5,10 +5,26 @@
   <%= link_to "Füge neuen Urlaubsort hinzu.", new_holiday_path %>
   <br><br>
 
+
+
+
   <% @holidays.each do |holiday| %>
-    <h5><%= link_to holiday.city, holiday %>, <%= holiday.country %> <%= "*" * holiday.rating %></h5>
-    <p><%= holiday.description %></p>
-    <%= cl_image_tag holiday.photo.key, height: 300, width: 400, crop: :fill %>
-    <br><br>
+    <div class="card w-50">
+      <%= cl_image_tag holiday.photo.key %>
+        <div class="card-body">
+          <h5 class="card-title">
+            <%= link_to holiday.city, holiday %>, <%= holiday.country %> <%= "*" * holiday.rating %>
+          </h5>
+          <p class="card-text">
+            <%= holiday.description %>
+          </p>
+          <a href="#" class="btn btn-primary">Go somewhere</a>
+        </div>
+    </div>
+    <br>
   <% end %>
+
+
+
+
 </div>
