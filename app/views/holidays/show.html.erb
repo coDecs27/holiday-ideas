@@ -2,11 +2,11 @@
   <h1>Zeige einen Urlaub</h1>
   <br>
   <div class="card" style="width: 48rem;">
-    <%= cl_image_tag @holiday.photo.key, class: "card-img" %>
+      <%= cl_image_tag @holiday.photo.key, class: "card-img" %>
       <div class="card-body">
-        <h5 class="card-title">
+        <h3 class="card-title">
           <%= @holiday.city %>, <%= @holiday.country %>
-        </h5>
+        </h3>
         <%= "⭐" * @holiday.rating %>
         <p class="card-text">
           <%= @holiday.description %>

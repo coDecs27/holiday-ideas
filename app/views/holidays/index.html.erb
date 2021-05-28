@@ -9,9 +9,9 @@
     <div class="card" style="width: 24rem;">
       <%= cl_image_tag holiday.photo.key, class: "card-img" %>
         <div class="card-body">
-          <h5 class="card-title">
+          <h4 class="card-title">
             <%= link_to holiday.city, holiday, class: "stretched-link" %>, <%= holiday.country %>
-          </h5>
+          </h4>
           <%= "⭐" * holiday.rating %>
           <p class="card-text">
             <%= holiday.description %>
