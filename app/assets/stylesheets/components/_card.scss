@@ -8,3 +8,12 @@
   border-top-left-radius: 16px;
   border-top-right-radius: 16px;
 }
+
+.stretched-link {
+  color: black;
+
+  &:hover {
+    color: black;
+    text-decoration: none;
+  }
+}
