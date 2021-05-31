@@ -27,3 +27,14 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.centered h1 {
+  font-size: 72px;
+  font-family: 'Dancing Script', cursive;
+}
+
+.centered h2 {
+  font-size: 40px;
+  font-family: 'Dancing Script', cursive;
+  line-height: 50px;
+}
