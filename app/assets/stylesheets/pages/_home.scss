@@ -9,3 +9,14 @@ body {
   padding-top: 32px;
   padding-bottom: 32px;
 }
+
+.banner-image {
+
+  text-align: center;
+}
+
+.banner-image img {
+  max-height: 100%;
+  max-width: 100%;
+  opacity: 0.70;
+}
