@@ -1,6 +1,12 @@
 // Specific CSS for your home-page
 
+html {
+  position: relative;
+  min-height: 100%;
+}
+
 body {
+  margin: 0 0 40px;
   background-color: #222222;
   color: white;
 }
