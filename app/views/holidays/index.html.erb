@@ -3,7 +3,7 @@
   <div class="centered">
     <h1>Urlaubsideen</h1>
     <br>
-    <h2>Entdecke spannende neue Vorschläge für deinen nächsten unvergesslichen Urlaub!</h2>
+    <h2>Entdecke spannende neue Vorschläge für deine nächste unvergessliche Urlaubsreise!</h2>
   </div>
 </div>
 
@@ -11,15 +11,16 @@
   <div class="homepage-text">
     <p>Lust auf eine unvergessliche Urlaubsreise, aber keine Ahnung wo es hingehen soll? Lass dich von uns inspirieren!
     <br>Hier findest du tolle Urlaubideen für deine nächste Reise!
-    <br>Vielleicht möchtest du stattdessen anderen Nutzern von deiner letzen Urlaubsreise berichten? Kein Problem! Nenne uns einfach das Land und die Stadt, beschreibe das Reiseziel kurz und lade ein Foto der Gegend hoch und schon können andere Nutzer an deinen Erfahrungen teilhaben.
+    <br><br>Vielleicht möchtest du stattdessen anderen Nutzern von deiner letzen Urlaubsreise berichten? Kein Problem! Nenne uns einfach das Land und die Stadt, beschreibe das Reiseziel kurz und lade ein Foto der Gegend hoch und schon können andere Nutzer an deinen Erfahrungen teilhaben.
     </p>
-</div>
+  </div>
 
-  <%= link_to "Füge neuen Urlaubsort hinzu.", new_holiday_path %>
-  <br><br>
+  <button class="new-button"><span>
+    <%= link_to "Reiseziel hinzufügen", new_holiday_path, class: "button-text" %>
+  </span></button>
 
   <div class="homepage-subtitle">
-  <h3>Reiseempfehlungen unserer Nutzer</h3>
+    <h3>Angesagte Reiseziele</h3>
   </div>
 
   <div class="cards-container">
