@@ -9,6 +9,7 @@ body {
   margin: 0 0 40px;
   background-color: #222222;
   color: white;
+  font-family: "Raleway", sans-serif;
 }
 
 .container {
@@ -28,6 +29,7 @@ body {
 }
 
 .homepage-text {
+  padding-bottom: 40px;
 }
 
 .homepage-subtitle {
@@ -36,7 +38,7 @@ body {
   margin: 50px auto 25px auto;
 
   h3 {
-    font-size: 36px;
+    font-size: 40px;
   }
 }
 
@@ -64,6 +66,10 @@ body {
     font-size: 0px;
     line-height: 24px;
   }
+
+  .homepage-text {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 601px) {
@@ -74,6 +80,10 @@ body {
   .centered h2 {
     font-size: 24px;
     line-height: 32px;
+  }
+
+  .homepage-text {
+    font-size: 18px;
   }
 }
 
@@ -86,6 +96,10 @@ body {
     font-size: 32px;
     line-height: 40px;
   }
+
+  .homepage-text {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
@@ -96,5 +110,9 @@ body {
   .centered h2 {
     font-size: 40px;
     line-height: 50px;
+  }
+
+  .homepage-text {
+    font-size: 24px;
   }
 }
