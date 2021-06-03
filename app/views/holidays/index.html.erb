@@ -8,8 +8,19 @@
 </div>
 
 <div class="container">
+  <div class="homepage-text">
+    <p>Lust auf eine unvergessliche Urlaubsreise, aber keine Ahnung wo es hingehen soll? Lass dich von uns inspirieren!
+    <br>Hier findest du tolle Urlaubideen für deine nächste Reise!
+    <br>Vielleicht möchtest du stattdessen anderen Nutzern von deiner letzen Urlaubsreise berichten? Kein Problem! Nenne uns einfach das Land und die Stadt, beschreibe das Reiseziel kurz und lade ein Foto der Gegend hoch und schon können andere Nutzer an deinen Erfahrungen teilhaben.
+    </p>
+</div>
+
   <%= link_to "Füge neuen Urlaubsort hinzu.", new_holiday_path %>
   <br><br>
+
+  <div class="homepage-subtitle">
+  <h3>Reiseempfehlungen unserer Nutzer</h3>
+  </div>
 
   <div class="cards-container">
     <% @holidays.each do |holiday| %>
