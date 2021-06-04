@@ -1,3 +1,5 @@
+// new-button
+
 .new-button {
   background-color: #6495ed;
   color: white;
@@ -43,4 +45,71 @@
 .new-button:hover span:after {
   opacity: 1;
   right: 0;
+}
+
+// frontpage-button
+
+.frontpage-button {
+  padding: 15px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: #6495ed;
+  border: solid;
+  border-width: 1px;
+  border-radius: 16px;
+  width: 200px;
+}
+
+.frontpage-button:hover {
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+}
+
+// edit-button
+
+.edit-button {
+  padding: 15px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: #6495ed;
+  border: solid;
+  border-width: 1px;
+  border-radius: 16px;
+  margin-right: 20px;
+}
+
+.edit-button:hover {
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
+}
+
+// delete-button
+
+.delete-button {
+  padding: 15px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: #6495ed;
+  border: solid;
+  border-width: 1px;
+  border-radius: 16px;
+  margin-right: 164px;
+}
+
+.delete-button:hover {
+  background-color: #1e90ff;
+  color: white;
+  text-decoration: none;
 }

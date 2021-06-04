@@ -1,21 +1,14 @@
 <div class="container">
-  <br>
-  <div class="card" style="width: 48rem;">
-      <%= cl_image_tag @holiday.photo.key, class: "card-img" %>
-      <div class="card-body">
-        <h3 class="card-title">
-          <%= @holiday.city %>, <%= @holiday.country %>
-        </h3>
-        <%= "⭐" * @holiday.rating %>
-        <p class="card-text">
-          <%= @holiday.description %>
-        </p>
-      </div>
+  <div class="show-card" style="width: 48rem;">
+    <%= cl_image_tag @holiday.photo.key, class: "card-img" %>
+    <div class="card-body">
+      <h3 class="card-title"><%= @holiday.city %>, <%= @holiday.country %></h3>
+      <%= "⭐" * @holiday.rating %>
+      <p class="card-text"><%= @holiday.description %></p>
     </div>
-  <br>
-  <%= link_to "Startseite", holidays_path %>
-  <br>
-  <%= link_to "Bearbeiten", edit_holiday_path %>
-  <br>
-  <%= link_to "Löschen", holiday_path(@holiday), method: :delete, data: { confirm: "Bist du sicher?" } %>
+  </div>
+
+  <%= link_to "Bearbeiten", edit_holiday_path, class: "edit-button" %>
+  <%= link_to "Löschen", holiday_path(@holiday), class: "delete-button", method: :delete, data: { confirm: "Bist du sicher?" } %>
+  <%= link_to "Zurück zur Startseite", holidays_path, class: "frontpage-button" %>
 </div>

@@ -1,5 +1,5 @@
 .form {
-  font-size: 22px;
+  font-size: 20px;
   padding-top: 16px;
 }
 
@@ -31,10 +31,4 @@
 .submit-button:hover {
   background-color: #1e90ff;
   color: white;
-}
-
-.submit-button:active {
-  background-color: #1e90ff;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
 }
