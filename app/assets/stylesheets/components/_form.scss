@@ -1,0 +1,39 @@
+.form {
+  font-size: 22px;
+  padding-top: 16px;
+}
+
+.form-text {
+  font-size: 22px;
+
+  h2 {
+    padding-bottom: 20px;
+  }
+}
+
+.submit-button {
+  padding: 15px 25px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: white;
+  background-color: #6495ed;
+  border: solid;
+  border-width: 1px;
+  border-radius: 16px;
+  margin-top: 32px;
+  width: 200px;
+}
+
+.submit-button:hover {
+  background-color: #1e90ff;
+  color: white;
+}
+
+.submit-button:active {
+  background-color: #1e90ff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}

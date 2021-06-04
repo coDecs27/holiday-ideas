@@ -1,4 +1,9 @@
 <div class="container">
+  <div class="form-text">
+    <h2>Eigenes Reiseziel hinzufügen</h2>
+    <p>Hier kannst du deine eigene Reiseempfehlung eintragen und absenden. Nenne uns einfach die Stadt, das Land und lass eine kurze Beschreibung des Reiseziels da. Zusätzlich kannst du deinen Urlaub noch auf einer Skala von 1 bis 5 bewerten. Und ganz wichtig: Ein schönes Foto der Gegend darf natürlich auch nicht fehlen! Danach einfach auf "Absenden" klicken und schon wird deine Urlaubsidee auf der Homepage angezeigt!</p>
+  </div>
+  <div class="form">
   <%= simple_form_for(holiday) do |f| %>
     <%= f.input :city, label: "Stadt" %>
     <%= f.input :country, label: "Land" %>
@@ -7,4 +12,5 @@
     <%= f.input :photo, as: :file %>
     <%= f.button :submit, "Absenden", class: "submit-button" %>
   <% end %>
+  </div>
 </div>
