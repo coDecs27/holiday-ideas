@@ -32,7 +32,7 @@
             </h4>
             <%= "⭐" * holiday.rating %>
             <p class="card-text">
-              <%= holiday.description %>
+              <%= holiday.description.split[0..25].join(' ') + " ..." %>
             </p>
           </div>
       </div>
