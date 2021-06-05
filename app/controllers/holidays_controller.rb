@@ -3,6 +3,12 @@ class HolidaysController < ApplicationController
 
   def index
     @holidays = Holiday.all
+    @markers = @holidays.geocoded.map do |holiday|
+      {
+        lat: holiday.latitude,
+        lng: holiday.longitude
+      }
+    end
   end
 
   def show
