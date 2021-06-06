@@ -15,8 +15,9 @@
   cursor: pointer;
   font-size: x-large;
   font-weight: bold;
+  margin-bottom: 50px;
 
-  .button-text {
+  .new-button-text {
     color: white;
     text-decoration: none;
   }
@@ -53,7 +54,7 @@
 
 // frontpage-button
 
-.frontpage-button {
+.back-to-frontpage-button {
   padding: 15px 25px;
   font-size: 18px;
   font-weight: bold;
@@ -65,13 +66,37 @@
   border: solid;
   border-width: 1px;
   border-radius: 16px;
-  width: 200px;
+  width: 270px;
+
+  .back-to-frontpage-button-text {
+    color: white;
+    text-decoration: none;
+  }
 }
 
-.frontpage-button:hover {
-  background-color: #708090;
-  color: white;
-  text-decoration: none;
+.back-to-frontpage-button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.back-to-frontpage-button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.back-to-frontpage-button:hover span {
+  padding-right: 25px;
+}
+
+.back-to-frontpage-button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 // edit-button
@@ -87,7 +112,7 @@
   border: solid;
   border-width: 1px;
   border-radius: 16px;
-  margin-right: 20px;
+  margin-right: 12px;
 }
 
 .edit-button:hover {
@@ -109,7 +134,6 @@
   border: solid;
   border-width: 1px;
   border-radius: 16px;
-  margin-right: 240px;
 }
 
 .delete-button:hover {

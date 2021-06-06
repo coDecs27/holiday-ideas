@@ -15,8 +15,14 @@
   </div>
 
   <button class="new-button"><span>
-    <%= link_to "Reiseziel hinzufügen", new_holiday_path, class: "button-text" %>
+    <%= link_to "Reiseziel hinzufügen", new_holiday_path, class: "new-button-text" %>
   </span></button>
+
+  <div id="map"
+    style="width: 100%; height: 600px;"
+    data-markers="<%= @markers.to_json %>"
+    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
+  </div>
 
   <div class="homepage-subtitle">
     <h3>Angesagte Reiseziele</h3>
@@ -37,12 +43,6 @@
           </div>
       </div>
     <% end %>
-  </div>
-
-  <div id="map"
-    style="width: 100%; height: 600px;"
-    data-markers="<%= @markers.to_json %>"
-    data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
 
 </div>
