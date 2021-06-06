@@ -14,7 +14,9 @@
     data-mapbox-api-key="<%= ENV['MAPBOX_API_KEY'] %>">
   </div>
 
-  <%= link_to "Bearbeiten", edit_holiday_path, class: "edit-button" %>
-  <%= link_to "Löschen", holiday_path(@holiday), class: "delete-button", method: :delete, data: { confirm: "Bist du sicher?" } %>
-  <%= link_to "Zurück zur Startseite", holidays_path, class: "frontpage-button" %>
+  <div class ="buttons">
+    <%= link_to "Bearbeiten", edit_holiday_path, class: "edit-button" %>
+    <%= link_to "Löschen", holiday_path(@holiday), class: "delete-button", method: :delete, data: { confirm: "Bist du sicher?" } %>
+    <%= link_to "Zurück zur Startseite", holidays_path, class: "frontpage-button" %>
+  </div>
 </div>
