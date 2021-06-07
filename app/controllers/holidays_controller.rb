@@ -3,9 +3,23 @@ class HolidaysController < ApplicationController
 
   def index
     @holidays = Holiday.all
+    @markers = @holidays.geocoded.map do |holiday|
+      {
+        lat: holiday.latitude,
+        lng: holiday.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { holiday: holiday })
+      }
+    end
   end
 
   def show
+    @marker = @holiday.geocode.map do |holiday|
+      {
+        lat: @holiday.latitude,
+        lng: @holiday.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { holiday: @holiday })
+      }
+    end
   end
 
   def new
