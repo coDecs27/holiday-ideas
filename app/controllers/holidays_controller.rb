@@ -6,7 +6,8 @@ class HolidaysController < ApplicationController
     @markers = @holidays.geocoded.map do |holiday|
       {
         lat: holiday.latitude,
-        lng: holiday.longitude
+        lng: holiday.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { holiday: holiday })
       }
     end
   end
@@ -15,7 +16,8 @@ class HolidaysController < ApplicationController
     @marker = @holiday.geocode.map do |holiday|
       {
         lat: @holiday.latitude,
-        lng: @holiday.longitude
+        lng: @holiday.longitude,
+        info_window: render_to_string(partial: "info_window", locals: { holiday: @holiday })
       }
     end
   end
