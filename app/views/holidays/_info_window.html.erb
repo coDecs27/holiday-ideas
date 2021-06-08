@@ -1,5 +1,5 @@
 <%= cl_image_tag holiday.photo.key, class: "mapbox-image", :cloud_name => "davmimqst" %>
 <h4 class="card-title">
-  <%= holiday.city %>, <%= holiday.country %>
+  <%= link_to holiday.city, holiday, class: "map-link" %>, <%= holiday.country %>
 </h4>
 <%= "⭐" * holiday.rating %>
