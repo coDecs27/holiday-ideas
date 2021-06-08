@@ -5,7 +5,7 @@
   </span></button>
 
   <div class="show-card" style="width: 48rem;">
-    <%= cl_image_tag @holiday.photo.key, class: "card-img" %>
+    <%= cl_image_tag @holiday.photo.key, class: "card-img", :cloud_name => "davmimqst" %>
     <div class="card-body">
       <h3 class="card-title"><%= @holiday.city %>, <%= @holiday.country %></h3>
       <%= "⭐" * @holiday.rating %>

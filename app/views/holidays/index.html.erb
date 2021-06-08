@@ -31,7 +31,7 @@
   <div class="cards-container">
     <% @holidays.each do |holiday| %>
       <div class="card" style="width: 24rem;">
-        <%= cl_image_tag holiday.photo.key, class: "card-img card-size" %>
+        <%= cl_image_tag holiday.photo.key, class: "card-img card-size", :cloud_name => "davmimqst" %>
           <div class="card-body">
             <h4 class="card-title">
               <%= link_to holiday.city, holiday, class: "stretched-link" %>, <%= holiday.country %>
