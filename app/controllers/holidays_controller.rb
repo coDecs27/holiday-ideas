@@ -13,12 +13,14 @@ class HolidaysController < ApplicationController
   end
 
   def show
-    @marker = @holiday.geocode.map do |holiday|
-      {
-        lat: @holiday.latitude,
-        lng: @holiday.longitude,
-        info_window: render_to_string(partial: "info_window", locals: { holiday: @holiday })
-      }
+    if @holiday.latitude.present?
+      @marker = @holiday.geocode.map do |holiday|
+        {
+          lat: @holiday.latitude,
+          lng: @holiday.longitude,
+          info_window: render_to_string(partial: "info_window", locals: { holiday: @holiday })
+        }
+      end
     end
   end
 
@@ -28,8 +30,7 @@ class HolidaysController < ApplicationController
 
   def create
     @holiday = Holiday.new(holiday_params)
-    @holiday.save
-    redirect_to holiday_path(@holiday)
+    @holiday.save ? (redirect_to holiday_path(@holiday)) : (render :new)
   end
 
   def edit
